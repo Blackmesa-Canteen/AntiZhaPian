@@ -123,6 +123,7 @@
                                 android:gravity="right"
                                 android:textSize="13sp"
                                 android:text="习**"
+                                android:textColor="#7A7A7A"
                                 tools:ignore="RtlHardcoded" />
 
                             <ImageView
@@ -154,6 +155,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:gravity="right"
+                                android:textColor="#7A7A7A"
                                 android:text="1****************7"
                                 android:textSize="13sp"
                                 tools:ignore="RtlHardcoded" />
@@ -181,6 +183,7 @@
                                 android:gravity="right"
                                 android:text="陕西省.渭南市.富平县"
                                 android:textSize="13sp"
+                                android:textColor="#7A7A7A"
                                 tools:ignore="RtlHardcoded" />
 
                             <ImageView
@@ -213,6 +216,7 @@
                                 android:gravity="right"
                                 android:textSize="13sp"
                                 android:text="请填写详细地址"
+                                android:textColor="#7A7A7A"
                                 tools:ignore="RtlHardcoded" />
 
                             <ImageView
@@ -244,6 +248,7 @@
                                 android:gravity="right"
                                 android:text="请选择"
                                 android:textSize="13sp"
+                                android:textColor="#7A7A7A"
                                 tools:ignore="RtlHardcoded" />
 
                             <ImageView

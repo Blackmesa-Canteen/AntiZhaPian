@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:maxLength="2"
-                    android:hint="填入首末数字即可（例如：32，5X）"
+                    android:hint="填入首末数字即可（例如：5X）"
                     android:textColorHint="#C1C1C1"
                     android:textSize="12sp" />
 
@@ -137,13 +137,35 @@
                     android:inputType="textPersonName"
                     android:textColorHint="#C1C1C1"
                     android:textSize="12sp"
-                    android:hint="例如：国家主席" />
+                    android:hint="例如：教育、学生" />
 
                 <ImageButton
                     android:id="@+id/set_load_work"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_baseline_loop" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/set_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机：" />
+
+                <EditText
+                    android:id="@+id/set_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="5"
+                    android:textColorHint="#C1C1C1"
+                    android:textSize="12sp"
+                    android:hint="手机前三位与后两位，如13916" />
+
             </TableRow>
         </TableLayout>
 
@@ -159,7 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="提交" />
+                android:text="确认" />
 
             <Button
                 android:id="@+id/set_clear"

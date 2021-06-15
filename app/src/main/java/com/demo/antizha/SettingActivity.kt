@@ -43,6 +43,10 @@ class SettingActivity : AppCompatActivity() {
                     Toast.makeText(this@SettingActivity, "行业不能为空。", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
+                settingBinding.setPhone.text.toString().matches("1\\d{10}".toRegex()) -> {
+                    Toast.makeText(this@SettingActivity, "手机格式!。", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
                 else -> {
                     settings = getSharedPreferences("setting", 0)
 
@@ -59,6 +63,7 @@ class SettingActivity : AppCompatActivity() {
                     editor.putString("region", settingBinding.setRegion.text.toString())
                     editor.putString("address", settingBinding.setAddress.text.toString())
                     editor.putString("work", settingBinding.setWork.text.toString())
+                    editor.putString("phone", settingBinding.setPhone.text.toString())
 
                     editor.apply()
                     Toast.makeText(this@SettingActivity, "成功", Toast.LENGTH_SHORT).show()
@@ -73,6 +78,7 @@ class SettingActivity : AppCompatActivity() {
             settingBinding.setRegion.text = null
             settingBinding.setAddress.text = null
             settingBinding.setWork.text = null
+            settingBinding.setPhone.text = null
         }
 
         settingBinding.setReset.setOnClickListener {
@@ -83,6 +89,7 @@ class SettingActivity : AppCompatActivity() {
             editor.remove("region")
             editor.remove("address")
             editor.remove("work")
+            editor.remove("phone")
             editor.commit()
             Toast.makeText(this@SettingActivity, "成功", Toast.LENGTH_SHORT).show()
             finish()

@@ -13,10 +13,10 @@ class PersonalActivity : AppCompatActivity() {
         setContentView(infoBinding.root)
         val settings: SharedPreferences = getSharedPreferences("setting", 0)
 
-        infoBinding.name.text = settings.getString("name", "周** ")
-        infoBinding.id.text = settings.getString("id", "4****************8")
-        infoBinding.region.text = settings.getString("region", "广东省.深圳市.龙岗区")
-        infoBinding.address.text = settings.getString("address", "龙岗中心城福宁路113号")
-        infoBinding.work.text = settings.getString("work", "电子设备制造")
+        infoBinding.name.text = settings.getString("name", "习** ")
+        infoBinding.id.text = settings.getString("id", "6****************1")
+        infoBinding.region.text = settings.getString("region", "陕西省.富平市.延川县")
+        infoBinding.address.text = settings.getString("address", "安驿公社梁家河大队")
+        infoBinding.work.text = settings.getString("work", "党政机关、社会团体")
     }
 }
