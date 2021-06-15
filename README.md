@@ -1,6 +1,6 @@
 # AntiZhaPian
 假的国家反诈中心  
-# [更新日志](https://github.com/XJP-GIT/AntiZhaPian/blob/main/CHANGELOG.md)
+# [更新日志](https://github.com/Blackmesa-Canteen/AntiZhaPian/blob/main/CHANGELOG.md)
 
 # 安装
 下载[dummyAntiZhaPian.apk](https://github.com/Blackmesa-Canteen/AntiZhaPian/blob/main/dummyAntiZhaPian.apk)(点击即可下载)，安装即可。    
